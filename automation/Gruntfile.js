@@ -6,7 +6,7 @@ module.exports = function ( grunt ) {
         singleRun: false
       },
       options: {
-        files: ['./test/*.spec.js']
+        configFile: 'karma.conf.js'
       },
       unit: {
         singleRun: true
@@ -16,7 +16,7 @@ module.exports = function ( grunt ) {
 
   grunt.loadNpmTasks('grunt-karma');
 
-  grunt.registerTask('test', 'A procedure for critical evaluation', ['karma:continuous:start']);
+  grunt.registerTask('test', 'A procedure for critical evaluation', ['karma:unit:start']);
   grunt.registerTask('helloWorld', 'A simple example', function() {
     grunt.log.write('Hello world\n').ok();
   });
