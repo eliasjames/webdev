@@ -17,15 +17,17 @@ I. Automated builds with Grunt
 In Practice (code-along)
   d. Get started
     - Install node/npm
-    - Install grunt-cli
+    - Install grunt-cli (once per dev machine)
+    - Install grunt
     - Write a Gruntfile
+    - `grunt`
   e. Gruntfile
     - module.exports
     - initConfig
     - loadNpmTasks
     - registerTask
+    - add a default task && grunt.log.write
 II. Exercise/Lab
-  f. Add a default task
   f. Set up Karma, Watch, Jshint:
     - npm install --save-dev [package name]
     - Add an options entry to initConfig object
